@@ -89,8 +89,10 @@ public class StoryActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        mp.stop();
-        mp.release();
-        mp = null;
+        if(mp != null){
+            mp.stop();
+            mp.release();
+            mp = null;
+        }
     }
 }
