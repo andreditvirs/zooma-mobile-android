@@ -44,7 +44,7 @@ public class DetailStoryActivity extends AppCompatActivity implements TextToSpee
         tts = new TextToSpeech(this, this);
         tts.setSpeechRate((float) 0.7);
         tts.setPitch((float) 1.8);
-        tts.setLanguage(Locale.US);
+        tts.setLanguage(Locale.ENGLISH);
 
         this.isTtsPlayed = 0;
     }
@@ -52,33 +52,32 @@ public class DetailStoryActivity extends AppCompatActivity implements TextToSpee
     public void startStoryTelling(View v)
     {
         if(this.isTtsPlayed == 0){
-            String text = "Cerita " + getResources().getString(this.title) + getResources().getString(this.text);
-            System.out.println("CERITA"+text);
+            String text = getResources().getString(this.title) + getResources().getString(this.text);
             tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
             this.isTtsPlayed = 1;
 
             if(this.isFirstTtsPlayed == 1){
-                cBtn_speak.setText("Hentikan Cerita!");
+                cBtn_speak.setText("Stop Listening!");
             }else{
                 new Handler().postDelayed(new Runnable(){
                     @Override
                     public void run() {
-                        cBtn_speak.setText("Cerita dimulai dalam 1s");
+                        cBtn_speak.setText("Story Starts in 1s");
 
                         new Handler().postDelayed(new Runnable(){
                             @Override
                             public void run() {
-                                cBtn_speak.setText("Cerita dimulai dalam 2s");
+                                cBtn_speak.setText("Story Starts in 2s");
 
                                 new Handler().postDelayed(new Runnable(){
                                     @Override
                                     public void run() {
-                                        cBtn_speak.setText("Cerita dimulai dalam 3s");
+                                        cBtn_speak.setText("Story Starts in 3s");
 
                                         new Handler().postDelayed(new Runnable(){
                                             @Override
                                             public void run() {
-                                                cBtn_speak.setText("Hentikan Cerita!");
+                                                cBtn_speak.setText("Stop Listening!");
                                             }
                                         }, TTS_SPEAK_LENGTH);
                                     }
@@ -94,7 +93,7 @@ public class DetailStoryActivity extends AppCompatActivity implements TextToSpee
             this.isTtsPlayed = 0;
             tts.stop();
 
-            cBtn_speak.setText("Dengarkan Cerita!");
+            cBtn_speak.setText("Listen The Story!");
         }
     }
 

@@ -69,7 +69,7 @@
                         android:textSize="14dp"
                         android:textFontWeight="1000"
                         android:textAlignment="center"
-                        android:text="Kisah Gajah dan Semut"
+                        android:text="The Story of the Elephant and the Ant"
                         android:paddingVertical="6dp"
                         android:paddingHorizontal="10dp"/>
                 </LinearLayout>
@@ -101,7 +101,7 @@
                         android:textSize="14dp"
                         android:textFontWeight="1000"
                         android:textAlignment="center"
-                        android:text="Kisah Kuda dan Keledai"
+                        android:text="The Story of the Horse and the Donkey"
                         android:paddingVertical="6dp"
                         android:paddingHorizontal="10dp"/>
                 </LinearLayout>
@@ -133,7 +133,7 @@
                         android:textSize="14dp"
                         android:textFontWeight="1000"
                         android:textAlignment="center"
-                        android:text="Kisah Kucing dan Rubah"
+                        android:text="The Story of the Cat and the Fox"
                         android:paddingVertical="6dp"
                         android:paddingHorizontal="10dp"/>
                 </LinearLayout>
@@ -165,7 +165,7 @@
                         android:textSize="14dp"
                         android:textFontWeight="1000"
                         android:textAlignment="center"
-                        android:text="Kisah Ayam Jago yang Sombong"
+                        android:text="The Story of a Arrogant Rooster"
                         android:paddingVertical="6dp"
                         android:paddingHorizontal="10dp"/>
                 </LinearLayout>
@@ -197,7 +197,7 @@
                         android:textSize="14dp"
                         android:textFontWeight="1000"
                         android:textAlignment="center"
-                        android:text="Kisah Harimau dan Kancil"
+                        android:text="The story of the tiger and the mouse deer"
                         android:paddingVertical="6dp"
                         android:paddingHorizontal="10dp"/>
                 </LinearLayout>
@@ -228,7 +228,7 @@
                         android:textSize="14dp"
                         android:textFontWeight="1000"
                         android:textAlignment="center"
-                        android:text="Kisah Sapi dan Kerbau"
+                        android:text="The Story of the Cow and the Buffalo"
                         android:paddingVertical="6dp"
                         android:paddingHorizontal="10dp"/>
                 </LinearLayout>

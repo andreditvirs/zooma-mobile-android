@@ -34,7 +34,7 @@
                     android:id="@+id/txtV_detail_story_subtitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cerita Satwa!"
+                    android:text="Animal Story!"
                     android:fontFamily="sans-serif"
                     android:textColor="@color/brown_light"
                     android:textSize="20dp"
@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:background="@color/brown_dark"
         android:backgroundTint="@color/brown_dark"
-        android:text="Dengarkan Cerita!"
+        android:text="Listen The Story!"
         android:textColor="@color/blue_sky"
         android:layout_alignParentBottom="true"
         android:onClick="startStoryTelling"/>
